@@ -16,5 +16,10 @@ namespace MVC_Console.controllers
             List<Produto> todos = produto.Ler();
             produtoView.ListarTodos(todos);
         }
+
+        public void Cadastrar()
+        {
+            produto.inserir(produtoView.CadsastrarProduto());
+        }
     }
 }
